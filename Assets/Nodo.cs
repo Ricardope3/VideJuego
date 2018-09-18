@@ -18,7 +18,7 @@ public class Nodo : MonoBehaviour {
 	private void OnDrawGizmos()
 	{
 		Gizmos.color = Color.blue;
-		Gizmos.DrawSphere(transform.position, .1f);
+		Gizmos.DrawSphere(transform.position, .6f);
 		if(vecinos!=null && vecinos.Length > 0)
 		{
 			for(int i = 0; i<vecinos.Length; i++)

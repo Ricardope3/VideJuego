@@ -15,7 +15,7 @@ public class Usuario : MonoBehaviour {
 	void Update () {
 
 		if (walking) {
-			transform.position = transform.position + Camera.main.transform.forward * Time.deltaTime*.5f;
+			transform.position = transform.position + Camera.main.transform.forward * Time.deltaTime*1.5f;
 		}	
 
 		if (transform.position.y < -10) {
