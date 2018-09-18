@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9789E70E-C089-D4EF-C1F1-3480CE7447E5}</ProjectGuid>
+    <ProjectGuid>{D526F3C6-527D-23B4-55C8-6CB92EF28D5A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -123,7 +123,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>C:/Users/Juan/Documents/ProyectoV1.0/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>C:/Users/Juan/Documents/ProyectoV1.0/ProyectoVideoJUegos/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/Juan/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
@@ -149,7 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{894A15F2-67FD-CAC7-3D42-12D52D7B2228}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{91ACA475-44E3-9ED9-4476-E2AA9B24D8EE}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
