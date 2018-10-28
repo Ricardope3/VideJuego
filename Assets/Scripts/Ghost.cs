@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Ghost : MonoBehaviour {
 	public Transform[] path;
 	private Transform target;
+    public GameObject jugador;
 	int current = 0;
+    NavMeshAgent agent;
 
 	private float threshold = 0.01f;
 	IEnumerator ie;
@@ -13,16 +16,32 @@ public class Ghost : MonoBehaviour {
 	float velocidad = 0.1f;
 	// Use this for initialization
 	void Start () {
-
+        agent = GetComponent<NavMeshAgent>();
 		target = path[0];
-		ie = verDist();
+		//ie = verDist();
 		c = StartCoroutine(ie);
+        
 	}
 
 	// Update is called once per frame
 	void Update () {
-		transform.LookAt(target);
-		transform.Translate(transform.forward*Time.deltaTime*velocidad,Space.World);
+        agent.speed = 1f;
+        //transform.LookAt(target);
+        //transform.Translate(transform.forward*Time.deltaTime*velocidad*0.1f,Space.World);
+        agent.destination = jugador.transform.position;
+        
+        /*
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                agent.destination = hit.point;
+            }
+        }
+        */
+
 	}
 
 	IEnumerator verDist()

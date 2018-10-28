@@ -103,6 +103,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\UI\GvrReticle.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazePointer.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
+    <Compile Include="Assets\Scripts\Crawler.cs" />
     <Compile Include="Assets\Scripts\Ghost.cs" />
     <Compile Include="Assets\Scripts\Nodo.cs" />
     <Compile Include="Assets\Scripts\ScareJump.cs" />

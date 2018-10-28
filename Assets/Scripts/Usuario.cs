@@ -24,6 +24,7 @@ public class Usuario : MonoBehaviour {
     AudioSource source;
     public AudioClip clipsitos;
     Rigidbody rb;
+    float velocity = 1.5f;
     // Use this for initialization
     void Start () {
 		spawn = transform.position;
@@ -50,19 +51,21 @@ public class Usuario : MonoBehaviour {
             light.GetComponent<Light>().intensity -= 0.001f;
         }
 		if (walking) {
+            velocity = 1.5f ;
             //transform.position = transform.position + Camera.main.transform.forward * Time.deltaTime*1.5f;
-            transform.Translate(cam.transform.forward * Time.deltaTime * 1.5f, Space.World);
+            transform.Translate(cam.transform.forward * Time.deltaTime * velocity, Space.World);
             if(!source.isPlaying)
             {
                 source.Play();
             }          
 		}
-        if (walking == false)
+        if (!walking)
         {
             gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
             transform.rotation = Quaternion.identity;
             source.Stop();
+            velocity = 0;
         }
 
 		if (transform.position.y < -10) {
