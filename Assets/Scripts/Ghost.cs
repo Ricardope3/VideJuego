@@ -17,15 +17,15 @@ public class Ghost : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         agent = GetComponent<NavMeshAgent>();
-		target = path[0];
+		//target = path[0];
 		//ie = verDist();
-		c = StartCoroutine(ie);
+		// = StartCoroutine(ie);
         
 	}
 
 	// Update is called once per frame
 	void Update () {
-        agent.speed = 1f;
+        agent.speed = 0.5f;
         //transform.LookAt(target);
         //transform.Translate(transform.forward*Time.deltaTime*velocidad*0.1f,Space.World);
         agent.destination = jugador.transform.position;

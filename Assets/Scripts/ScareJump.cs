@@ -11,11 +11,16 @@ public class ScareJump : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        scream.Play();
-        jumpCam.SetActive(true);
-        player.SetActive(false);
-        flashIMG.SetActive(true);
-        StartCoroutine(endJump());
+        if(other.tag == "Player")
+        {
+            scream.Play();
+            jumpCam.SetActive(true);
+            player.SetActive(false);
+            flashIMG.SetActive(true);
+            StartCoroutine(endJump());
+            
+        }
+
     }
 
     IEnumerator endJump()
@@ -24,5 +29,6 @@ public class ScareJump : MonoBehaviour {
         player.SetActive(true);
         jumpCam.SetActive(false);
         flashIMG.SetActive(false);
+        Destroy(gameObject);
     }
 }

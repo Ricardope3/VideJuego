@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Usuario : MonoBehaviour {
@@ -28,7 +29,7 @@ public class Usuario : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		spawn = transform.position;
-        ie = verCofre();
+        //ie = verCofre();
         vida.value = 0;
 
         source = GetComponent<AudioSource>();
@@ -36,9 +37,9 @@ public class Usuario : MonoBehaviour {
         source.clip = clipsitos;
         source.Play();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update() {
 
         if (Input.GetKeyDown(KeyCode.A))
         {
@@ -50,15 +51,15 @@ public class Usuario : MonoBehaviour {
         {
             light.GetComponent<Light>().intensity -= 0.001f;
         }
-		if (walking) {
-            velocity = 1.5f ;
+        if (walking) {
+            velocity = 1.5f;
             //transform.position = transform.position + Camera.main.transform.forward * Time.deltaTime*1.5f;
             transform.Translate(cam.transform.forward * Time.deltaTime * velocity, Space.World);
-            if(!source.isPlaying)
+            if (!source.isPlaying)
             {
                 source.Play();
-            }          
-		}
+            }
+        }
         if (!walking)
         {
             gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
@@ -68,9 +69,9 @@ public class Usuario : MonoBehaviour {
             velocity = 0;
         }
 
-		if (transform.position.y < -10) {
-			transform.position = spawn;
-		}
+        if (transform.position.y < -10 || vida.value >99) {
+            //SceneManager.LoadScene("Salir1");
+        }
         
 		Ray ray = Camera.main.ViewportPointToRay(new Vector3(.5f,.5f,0));
 		RaycastHit hit;
@@ -136,14 +137,7 @@ public class Usuario : MonoBehaviour {
         }
 	}
 
-    IEnumerator verCofre()
-    {
-        
-            yield return new WaitForSeconds(6);
-            print("hola jajajaj");
-        
 
-    }
 
     IEnumerator sonarCoin()
     {

@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{9AD49310-08D6-3650-6270-6DA851A942C3}</ProjectGuid>
+    <ProjectGuid>{D526F3C6-527D-23B4-55C8-6CB92EF28D5A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -70,16 +70,16 @@
     <Compile Include="Assets\GoogleVR\Legacy\Editor\GvrViewerEditor.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Editor\StereoControllerEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Ricardo/Documents/VideoJuegos/ProyectoVideoJuegos-Ricardo_1/ProyectoVideoJUegos-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Ricardo/Documents/VideoJuegos/ProyectoVideoJuegos-Ricardo_1/ProyectoVideoJUegos-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Ricardo/Documents/VideoJuegos/ProyectoVideoJuegos-Ricardo_1/ProyectoVideoJUegos-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Ricardo/Documents/VideoJuegos/ProyectoVideoJuegos-Ricardo_1/ProyectoVideoJUegos-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -322,7 +322,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Google.ProtocolBuffers">
-      <HintPath>C:/Users/Ricardo/Documents/VideoJuegos/ProyectoVideoJuegos-Ricardo_1/ProyectoVideoJUegos-master/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/Ricardo/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -372,7 +372,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{50058DE7-9D68-BB14-A588-434606B8CF9B}</Project>
+      <Project>{91ACA475-44E3-9ED9-4476-E2AA9B24D8EE}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>
