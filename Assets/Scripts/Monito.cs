@@ -18,7 +18,7 @@ public class Monito : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.LeftAlt))
         {
-            h = 6f * Input.GetAxis("Mouse X");
+            h = 4 * Input.GetAxis("Mouse X");
             transform.Rotate(0, h, 0);
         }
 

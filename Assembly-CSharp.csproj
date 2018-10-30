@@ -137,6 +137,7 @@
     <Compile Include="Assets\Scripts\ScareJump.cs" />
     <Compile Include="Assets\Scripts\Usuario.cs" />
     <Compile Include="Assets\Scripts\YouDied.cs" />
+    <Compile Include="Assets\Timer.cs" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
