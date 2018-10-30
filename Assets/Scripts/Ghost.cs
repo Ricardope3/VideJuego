@@ -30,7 +30,7 @@ public class Ghost : MonoBehaviour {
         //transform.Translate(transform.forward*Time.deltaTime*velocidad*0.1f,Space.World);
         if (!vamonos)
         {
-            agent.destination = jugador.transform.position;
+                agent.destination = jugador.transform.position;
 
         }
         if (vamonos)

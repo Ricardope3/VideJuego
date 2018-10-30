@@ -12,7 +12,7 @@ public class Usuario : MonoBehaviour {
     public AudioClip coin;
     public GameObject light;
     private Light lightcomponent;
-	private bool walking=false;
+	public bool walking=false;
 	private Vector3 spawn;
     IEnumerator ie;
     Coroutine c;
@@ -111,7 +111,7 @@ public class Usuario : MonoBehaviour {
 				walking=false;
 			}
 
-            if (hit.collider.name == "chest_close")
+            else if (hit.collider.name == "chest_close")
             {
                 stop = Time.time;
                 walking = false;
@@ -153,7 +153,7 @@ public class Usuario : MonoBehaviour {
             slider.value = stop - start; 
             if (stop - start > 5)
             {
-                print(stop  -  start);
+                
                 stop = 0;
                 if (!lampara)
                 {
@@ -166,11 +166,16 @@ public class Usuario : MonoBehaviour {
                 }
                 if (lampara)
                 {
+                    Destroy(GameObject.Find("lampara_chest"));
+                    Instantiate<GameObject>(chestOpen, chestLampara.transform.position, chestLampara.transform.rotation);
                     light.SetActive(true);
+                    source.clip = coin;
+                    StartCoroutine(sonarCoin());
+
                 }
-                
-                
-                
+
+
+
             }
         }
 	}
@@ -179,7 +184,7 @@ public class Usuario : MonoBehaviour {
 
     IEnumerator sonarCoin()
     {
-        yield return new WaitForSeconds(1.776f);
+        yield return new WaitForSeconds(2f);
         source.clip = clipsitos;
 
     }
