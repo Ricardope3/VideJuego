@@ -4,4 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Salir1.unity
+    guid: e246b4c9dc2987f4b8395457331f3a81
+  - enabled: 1
+    path: Assets/DeadScene.unity
+    guid: ef491d92b7b322d459ee2ba51f196750
+  m_configObjects: {}

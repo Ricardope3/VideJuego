@@ -11,6 +11,7 @@ public class Usuario : MonoBehaviour {
     public GameObject chestLampara;
     public AudioClip coin;
     public GameObject light;
+    private Light lightcomponent;
 	private bool walking=false;
 	private Vector3 spawn;
     IEnumerator ie;
@@ -18,7 +19,9 @@ public class Usuario : MonoBehaviour {
     float start = 0;
     float stop = 0;
     bool lampara = false;
+    bool lamparaArma = false;
     public Camera cam;
+    public bool saquese=false;
     public GameObject loading;
     public Slider slider;
     public Slider vida;
@@ -31,7 +34,7 @@ public class Usuario : MonoBehaviour {
 		spawn = transform.position;
         //ie = verCofre();
         vida.value = 0;
-
+        lightcomponent = light.GetComponent<Light>();
         source = GetComponent<AudioSource>();
         rb = gameObject.GetComponent<Rigidbody>();
         source.clip = clipsitos;
@@ -43,13 +46,39 @@ public class Usuario : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            light.GetComponent<Light>().spotAngle = 10;
+            lamparaArma = !lamparaArma;
+            if (lamparaArma)
+            {
+                lightcomponent.intensity = 20;
+            }
+            else
+            {
+                lightcomponent.intensity = 5.5f;
+            }
+            
         }
 
-        vida.value += 0.05f;
+
+        vida.value += 0.02f;
         if (light.active)
         {
-            light.GetComponent<Light>().intensity -= 0.001f;
+            if (lamparaArma)
+            {
+                lightcomponent.spotAngle = 10;
+                lightcomponent.range = 20;
+               
+                lightcomponent.intensity -=0.03f;
+               
+                
+            }
+            else
+            {
+                lightcomponent.spotAngle = 40;
+                lightcomponent.range = 9;
+                    
+                lightcomponent.intensity -= 0.001f;
+                 
+            }
         }
         if (walking) {
             velocity = 1.5f;
@@ -70,7 +99,7 @@ public class Usuario : MonoBehaviour {
         }
 
         if (transform.position.y < -10 || vida.value >99) {
-            //SceneManager.LoadScene("Salir1");
+            SceneManager.LoadScene("DeadScene");
         }
         
 		Ray ray = Camera.main.ViewportPointToRay(new Vector3(.5f,.5f,0));
@@ -88,6 +117,15 @@ public class Usuario : MonoBehaviour {
                 walking = false;
                 lampara = false;
                 //c = StartCoroutine(ie);
+                
+            }
+            else if(hit.collider.name == "Ghost")
+            {
+                if (lamparaArma && light.active &&lightcomponent.intensity>0)
+                {
+                    saquese = true;
+                    StartCoroutine(esperarSaquese());
+                }
                 
             }
             else if (hit.collider.name == "lampara_chest")
@@ -144,5 +182,11 @@ public class Usuario : MonoBehaviour {
         yield return new WaitForSeconds(1.776f);
         source.clip = clipsitos;
 
+    }
+
+    IEnumerator esperarSaquese()
+    {
+        yield return new WaitForSeconds(10);
+        saquese = false;
     }
 }

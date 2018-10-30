@@ -109,6 +109,7 @@
     <Compile Include="Assets\Scripts\Nodo.cs" />
     <Compile Include="Assets\Scripts\ScareJump.cs" />
     <Compile Include="Assets\Scripts\Usuario.cs" />
+    <Compile Include="Assets\Scripts\YouDied.cs" />
     <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
     <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
     <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />

@@ -4,18 +4,17 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Ghost : MonoBehaviour {
-	public Transform[] path;
-	private Transform target;
+    
+
     public GameObject jugador;
 	int current = 0;
     NavMeshAgent agent;
+    public Transform spawn;
+    bool vamonos;
 
-	private float threshold = 0.01f;
-	IEnumerator ie;
-	Coroutine c;
-	float velocidad = 0.1f;
 	// Use this for initialization
 	void Start () {
+        
         agent = GetComponent<NavMeshAgent>();
 		//target = path[0];
 		//ie = verDist();
@@ -26,9 +25,18 @@ public class Ghost : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         agent.speed = 0.5f;
+        vamonos = GameObject.Find("GvrMain").GetComponent<Usuario>().saquese;
         //transform.LookAt(target);
         //transform.Translate(transform.forward*Time.deltaTime*velocidad*0.1f,Space.World);
-        agent.destination = jugador.transform.position;
+        if (!vamonos)
+        {
+            agent.destination = jugador.transform.position;
+
+        }
+        if (vamonos)
+        {
+            agent.destination = spawn.position;
+        }
         
         /*
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -41,23 +49,10 @@ public class Ghost : MonoBehaviour {
             }
         }
         */
+        
 
 	}
 
-	IEnumerator verDist()
-	{
-		while (true)
-		{
-			yield return new WaitForSeconds(0.1f);
-			float distancia =  Vector3.Distance(transform.position, path[current].position);
-			if (distancia < threshold)
-			{
 
-				current++;
-				current %= path.Length;
-				target = path[current];
-			}
-		}
-	}
 
 }		
