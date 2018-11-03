@@ -22,8 +22,10 @@ public class Usuario : MonoBehaviour {
     bool lamparaArma = false;
     public Camera cam;
     public bool saquese=false;
-    public GameObject loading;
-    public Slider slider;
+    public GameObject loadingCofres;
+    public GameObject linternaPanel;
+    public Slider cofreSlider;
+    public Slider linternaSlider;
     public Slider vida;
     AudioSource source;
     public AudioClip clipsitos;
@@ -43,9 +45,28 @@ public class Usuario : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-
+        linternaSlider.value = lightcomponent.intensity;
+        if (lamparaArma)f
+        {
+            linternaSlider.maxValue = 20;
+        
+        }
+        if (!lamparaArma)
+        {
+            linternaSlider.maxValue = 5.5f;
+        }
+        if (!light.active)
+        {
+            linternaPanel.SetActive(false);
+        }
+        
+        if (light.active)
+        {
+            linternaPanel.SetActive(true);
+        }
         if (Input.GetKeyDown(KeyCode.A))
         {
+
             lamparaArma = !lamparaArma;
             if (lamparaArma)
             {
@@ -91,10 +112,13 @@ public class Usuario : MonoBehaviour {
         }
         if (!walking)
         {
-            gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-            gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+           rb.angularVelocity = Vector3.zero;
+            rb.velocity = Vector3.zero;
             transform.rotation = Quaternion.identity;
-            source.Stop();
+            if (!source.clip.Equals(coin))
+            {
+                source.Stop();
+            }
             velocity = 0;
         }
 
@@ -107,7 +131,11 @@ public class Usuario : MonoBehaviour {
 
 		if(Physics.Raycast(ray,out hit)){
 			if(hit.collider.name.Contains("Principal")){
+                if (!source.clip.Equals(coin))
+                {
+
                 source.Stop();  
+                }
 				walking=false;
 			}
 
@@ -145,12 +173,12 @@ public class Usuario : MonoBehaviour {
         if (stop == 0)
         {
             start = Time.time;
-            loading.SetActive(false);
+            loadingCofres.SetActive(false);
         }
         if (stop >0)
         {
-            loading.SetActive(true);
-            slider.value = stop - start; 
+            loadingCofres.SetActive(true);
+            cofreSlider.value = stop - start; 
             if (stop - start > 5)
             {
                 
