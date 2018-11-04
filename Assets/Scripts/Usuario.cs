@@ -46,14 +46,19 @@ public class Usuario : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         linternaSlider.value = lightcomponent.intensity;
-        if (lamparaArma)f
+        if (lightcomponent.intensity < 1)
         {
-            linternaSlider.maxValue = 20;
+            linternaPanel.SetActive(false);
+            light.SetActive(false);
+        }
+        if (lamparaArma)
+        {
+            linternaSlider.maxValue = 40;
         
         }
         if (!lamparaArma)
         {
-            linternaSlider.maxValue = 5.5f;
+            linternaSlider.maxValue = 6;
         }
         if (!light.active)
         {
@@ -64,17 +69,17 @@ public class Usuario : MonoBehaviour {
         {
             linternaPanel.SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (light.active && Input.GetKeyDown(KeyCode.A))
         {
 
             lamparaArma = !lamparaArma;
             if (lamparaArma)
             {
-                lightcomponent.intensity = 20;
+                lightcomponent.intensity = lightcomponent.intensity + lightcomponent.intensity * 6;
             }
             else
             {
-                lightcomponent.intensity = 5.5f;
+                lightcomponent.intensity = lightcomponent.intensity - lightcomponent.intensity *0.9f ;
             }
             
         }
@@ -88,7 +93,7 @@ public class Usuario : MonoBehaviour {
                 lightcomponent.spotAngle = 10;
                 lightcomponent.range = 20;
                
-                lightcomponent.intensity -=0.03f;
+                lightcomponent.intensity -=0.02f;
                
                 
             }
@@ -194,9 +199,11 @@ public class Usuario : MonoBehaviour {
                 }
                 if (lampara)
                 {
-                    Destroy(GameObject.Find("lampara_chest"));
+                    //Destroy(GameObject.Find("lampara_chest"));
                     Instantiate<GameObject>(chestOpen, chestLampara.transform.position, chestLampara.transform.rotation);
                     light.SetActive(true);
+                    lamparaArma = false;
+                    lightcomponent.intensity = 5.5f;
                     source.clip = coin;
                     StartCoroutine(sonarCoin());
 
