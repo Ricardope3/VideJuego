@@ -30,7 +30,7 @@ public class Usuario : MonoBehaviour {
     AudioSource source;
     public AudioClip clipsitos;
     Rigidbody rb;
-    float velocity = 1.5f;
+    float velocity = 2.5f;
     // Use this for initialization
     void Start () {
 		spawn = transform.position;
@@ -144,7 +144,7 @@ public class Usuario : MonoBehaviour {
 				walking=false;
 			}
 
-            else if (hit.collider.name == "chest_close")
+            else if (hit.collider.name.Contains("chest_close"))
             {
                 stop = Time.time;
                 walking = false;
@@ -161,7 +161,7 @@ public class Usuario : MonoBehaviour {
                 }
                 
             }
-            else if (hit.collider.name == "lampara_chest")
+            else if (hit.collider.name.Contains("lampara_chest"))
             {
                 stop = Time.time;
                 walking = false;
@@ -219,7 +219,7 @@ public class Usuario : MonoBehaviour {
 
     IEnumerator sonarCoin()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         source.clip = clipsitos;
 
     }

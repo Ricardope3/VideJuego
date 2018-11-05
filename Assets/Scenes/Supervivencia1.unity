@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 4aa30c3a4a7a34bbd9256623e194cf78, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 5bf9ffcbeddeae14c83933fcd44b16a7, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0
+  m_ReflectionIntensity: 0.294
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
+  m_IndirectSpecularColor: {r: 0.02265733, g: 0.054395586, b: 0.11398884, a: 0.294}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8900,8 +8900,10 @@ MonoBehaviour:
   walking: 0
   cam: {fileID: 1449034004}
   saquese: 0
-  loading: {fileID: 683707180}
-  slider: {fileID: 1834340046}
+  loadingCofres: {fileID: 0}
+  linternaPanel: {fileID: 0}
+  cofreSlider: {fileID: 0}
+  linternaSlider: {fileID: 0}
   vida: {fileID: 1923754915}
   clipsitos: {fileID: 8300000, guid: 58a996ed84ba2ed42ab3744a671aacc5, type: 3}
 --- !u!1001 &805332218
