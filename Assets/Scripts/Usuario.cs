@@ -219,14 +219,14 @@ public class Usuario : MonoBehaviour {
 
     IEnumerator sonarCoin()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         source.clip = clipsitos;
 
     }
 
     IEnumerator esperarSaquese()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(15);
         saquese = false;
     }
 }
