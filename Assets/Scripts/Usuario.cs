@@ -32,9 +32,12 @@ public class Usuario : MonoBehaviour {
     Rigidbody rb;
     float velocity = 2.5f;
     string destruirEsteCofre ="";
+    int llaveInt = 0;
+    private bool puertaAbierta = false;
+
     // Use this for initialization
     void Start () {
-        int llaveInt = Random.Range(0, 22);
+        llaveInt = Random.Range(0, 22);
         print(llaveInt);
         walking = true;
 		spawn = transform.position;
@@ -49,7 +52,7 @@ public class Usuario : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-
+        print(puertaAbierta);
         linternaSlider.value = lightcomponent.intensity;
         if (lightcomponent.intensity < 1)
         {
@@ -199,12 +202,27 @@ public class Usuario : MonoBehaviour {
             if (stop - start > 3)
             {
                 destruirEsteCofre = hit.collider.name;
+                char enteroChar = destruirEsteCofre[destruirEsteCofre.Length - 2];
+                int enteroInt;
+                if (enteroChar == 's')
+                {
+                    enteroInt = 0;
+                }
+                else
+                {
+                    enteroInt = (int)System.Char.GetNumericValue(enteroChar);
+                }
+                
+                print(enteroInt);
                 GameObject destruirEsteCofreObject = GameObject.Find(destruirEsteCofre);
 
                 stop = 0;
                 if (!lampara)
                 {
-                    
+                    if (enteroInt == llaveInt)
+                    {
+                        puertaAbierta = true;
+                    }
                     Instantiate<GameObject>(chestOpen, destruirEsteCofreObject.transform.position, destruirEsteCofreObject.transform.rotation);
                     Destroy(destruirEsteCofreObject);
                     vida.value -= 50;
