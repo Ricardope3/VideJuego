@@ -4067,6 +4067,7 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpCam: {fileID: 0}
   flashIMG: {fileID: 622564688}
+  ppb: {fileID: 0}
 --- !u!65 &343102445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4201,6 +4202,7 @@ MonoBehaviour:
   player: {fileID: 956501330}
   jumpCam: {fileID: 274415106}
   flashIMG: {fileID: 972447757}
+  ppb: {fileID: 0}
 --- !u!81 &345160105
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5870,6 +5872,7 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpCam: {fileID: 0}
   flashIMG: {fileID: 622564688}
+  ppb: {fileID: 0}
 --- !u!65 &490705361
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7912,6 +7915,7 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpCam: {fileID: 0}
   flashIMG: {fileID: 622564688}
+  ppb: {fileID: 0}
 --- !u!65 &632113406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10884,7 +10888,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 956501330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.73, y: 3.13, z: -29.292}
+  m_LocalPosition: {x: -2.2, y: 3.13, z: -3.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 274415107}
@@ -15693,6 +15697,7 @@ MonoBehaviour:
   player: {fileID: 956501330}
   jumpCam: {fileID: 274415106}
   flashIMG: {fileID: 972447757}
+  ppb: {fileID: 0}
 --- !u!81 &1427129562
 AudioListener:
   m_ObjectHideFlags: 0
@@ -16824,6 +16829,7 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpCam: {fileID: 0}
   flashIMG: {fileID: 622564688}
+  ppb: {fileID: 0}
 --- !u!65 &1488573679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20079,6 +20085,7 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpCam: {fileID: 0}
   flashIMG: {fileID: 622564688}
+  ppb: {fileID: 0}
 --- !u!65 &1842409634
 BoxCollider:
   m_ObjectHideFlags: 0
