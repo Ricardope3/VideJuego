@@ -12,9 +12,11 @@ public class YouDied : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            SceneManager.LoadScene("Salir1");
-        }
+        StartCoroutine(irAMenu());
 	}
+    IEnumerator irAMenu()
+    {
+        yield return new WaitForSeconds(4);
+        SceneManager.LoadScene("Menu");
+    }
 }

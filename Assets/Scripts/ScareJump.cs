@@ -22,11 +22,12 @@ public class ScareJump : MonoBehaviour {
         {
             ;
             scream.Play();
+            
             jumpCam.SetActive(true);
             //player.SetActive(false);
             flashIMG.SetActive(true);
             ppb.enabled = true;
-            print(ppb.gameObject.name);
+            //print(ppb.gameObject.name);
             StartCoroutine(Sanity());
             StartCoroutine(endJump());
 
@@ -38,7 +39,8 @@ public class ScareJump : MonoBehaviour {
     IEnumerator endJump()
     {
         yield return new WaitForSeconds(2.03f);
-       // player.SetActive(true);
+        Destroy(scream);
+        // player.SetActive(true);
         jumpCam.SetActive(false);
         flashIMG.SetActive(false);
         

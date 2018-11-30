@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Finish : MonoBehaviour {
-
+    public AudioSource ganaste;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,6 +18,14 @@ public class Finish : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("Salir1");   
+        ganaste.Play();
+        StartCoroutine(esperar());
+           
+    }
+
+    IEnumerator esperar()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Menu");
     }
 }

@@ -34,10 +34,15 @@ public class Usuario : MonoBehaviour {
     string destruirEsteCofre ="";
     int llaveInt = 0;
     private bool puertaAbierta = false;
+    public AudioSource llaveaudiosource;
+    Vector3 velocidad;
+
+    public GameObject aluzarpuerta;
+    public GameObject puertaDestruir;
 
     // Use this for initialization
     void Start () {
-        llaveInt = Random.Range(0, 22);
+        llaveInt = Random.Range(0, 1);
         print(llaveInt);
         walking = true;
 		spawn = transform.position;
@@ -47,11 +52,23 @@ public class Usuario : MonoBehaviour {
         source = GetComponent<AudioSource>();
         rb = gameObject.GetComponent<Rigidbody>();
         source.clip = clipsitos;
+        velocity = 1.5f;
         source.Play();
     }
 
     // Update is called once per frame
     void Update() {
+        velocidad = rb.velocity;
+        
+        //print("velocidad" + velocidad.magnitude);
+        
+        if (velocidad.magnitude>2)
+        {
+            print("bajar");
+            rb.velocity = Vector3.zero;
+            transform.Translate(cam.transform.forward * Time.deltaTime * velocity, Space.World);
+            rb.angularVelocity = Vector3.zero;
+        }
         print(puertaAbierta);
         linternaSlider.value = lightcomponent.intensity;
         if (lightcomponent.intensity < 1)
@@ -231,6 +248,9 @@ public class Usuario : MonoBehaviour {
                     if (enteroInt == llaveInt)
                     {
                         puertaAbierta = true;
+                        llaveaudiosource.Play();
+                        Destroy(puertaDestruir);
+                        aluzarpuerta.SetActive(true);
                     }
                     Instantiate<GameObject>(chestOpen, destruirEsteCofreObject.transform.position, destruirEsteCofreObject.transform.rotation);
                     Destroy(destruirEsteCofreObject);
