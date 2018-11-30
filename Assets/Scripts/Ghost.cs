@@ -25,7 +25,7 @@ public class Ghost : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         agent.speed = 0.5f;
-        vamonos = GameObject.Find("GvrMain").GetComponent<Usuario>().saquese;
+        vamonos = GameObject.Find("Player").GetComponent<Usuario>().saquese;
         //transform.LookAt(target);
         //transform.Translate(transform.forward*Time.deltaTime*velocidad*0.1f,Space.World);
         if (!vamonos)

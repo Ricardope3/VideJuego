@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{91ACA475-44E3-9ED9-4476-E2AA9B24D8EE}</ProjectGuid>
+    <ProjectGuid>{DBFF2B97-95A7-1A8B-A977-0ED30912559B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_15;UNITY_2018_2;UNITY_2018;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_15;UNITY_2018_2;UNITY_2018;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -61,48 +61,115 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
-    <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDemoManager.cs" />
-    <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\FPS.cs" />
-    <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\Teleport.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\GvrHead.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrCameraUtils.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrEye.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrPostRender.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrPreRender.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrProfile.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\StereoController.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\StereoRenderEffect.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\AndroidDevice.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\BaseAndroidDevice.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\BaseVRDevice.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\EditorDevice.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\GvrDevice.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\iOSDevice.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudio.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioListener.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioRoom.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioSoundfield.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioSource.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrController.cs" />
+    <Compile Include="Assets\GoogleVR\Beta\Demos\Hello6DoFControllers\Scripts\DemoObjectController6DoF.cs" />
+    <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBeta.cs" />
+    <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBetaControllerVisualMulti.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoSceneManager.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\HelloVR\HeadsetDemoManager.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\HelloVR\HelloVRManager.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\HelloVR\ObjectController.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\KeyboardDemo\KeyboardDelegateExample.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\PermissionsDemo\PermissionsFlowManager.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\AppButtonInput.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\AutoPlayVideo.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\InputEvents.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\MenuHandler.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\PositionSwapper.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\ScrubberEvents.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\SwitchVideos.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\ToggleAction.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\VideoControlsManager.cs" />
+    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\VideoPlayerReference.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudio.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudioListener.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudioRoom.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudioSoundfield.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudioSource.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Cardboard\GvrReticlePointer.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\ArmModel\GvrArmModel.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\ArmModel\GvrBaseArmModel.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\ArmModel\IGvrArmModelReceiver.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrControllerInput.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrControllerInputDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrControllerReticleVisual.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrControllerVisual.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrLaserPointer.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrLaserVisual.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrRecenterOnlyController.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrTrackedController.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\IGvrControllerInputDeviceReceiver.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviderFactory.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\AndroidNativeControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\AndroidNativeShimControllerProvider.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\DummyControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\EditorControllerProvider.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\EmulatorControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\MouseControllerProvider.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerState.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerUtils.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorClientSocket.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorConfig.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorDataTypes.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorManager.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\PhoneEvent.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\IControllerProvider.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\GazeInputModule.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\GvrViewer.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Tooltips\GvrControllerTooltipsSimple.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Tooltips\GvrTooltip.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrBasePointer.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrBasePointerRaycaster.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrEventInterfacesExtension.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrExecuteEventsExtension.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrPointerEventData.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrPointerGraphicRaycaster.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrPointerPhysicsRaycaster.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrPointerScrollInput.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrScrollSettings.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrXREventsSubscriber.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\IGvrScrollSettings.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\InputModule\GvrAllEventsTrigger.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\InputModule\GvrEventExecutor.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\InputModule\GvrPointerInputModule.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\InputModule\GvrPointerInputModuleImpl.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\InputModule\IGvrEventExecutor.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\EventSystem\InputModule\IGvrInputModuleController.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrCardboardHelpers.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrEditorEmulator.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrSettings.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrUnitySdkVersion.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Headset\GvrHeadset.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Headset\GvrHeadsetEnums.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Headset\Internal\HeadsetProviderFactory.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Headset\Internal\HeadsetProviders\AndroidNativeHeadsetEnums.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Headset\Internal\HeadsetProviders\AndroidNativeHeadsetProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Headset\Internal\HeadsetProviders\DummyHeadsetProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Headset\Internal\HeadsetProviders\EditorHeadsetProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Headset\Internal\HeadsetState.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Headset\Internal\IHeadsetProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\InstantPreview\InstantPreview.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\InstantPreview\InstantPreviewControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\InstantPreview\InstantPreviewHelper.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Keyboard\GvrKeyboard.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Keyboard\GvrKeyboardDelegateBase.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Keyboard\GvrKeyboardIntent.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\IKeyboardProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviderFactory.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\AndroidNativeKeyboardProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\DummyKeyboardProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\EmulatorKeyboardProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardState.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Permissions\GvrPermissionsRequester.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Pose3D.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\UI\GvrGaze.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\UI\GvrReticle.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazePointer.cs" />
-    <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\PropertyDrawers\GvrInfoDrawer.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\UI\GvrDropdown.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrActivityHelper.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrCursorHelper.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrDaydreamApi.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrMathHelpers.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Utilities\SuppressMemoryAllocationErrorAttribute.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -189,7 +256,6 @@
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ShowAlphaChannel.shader" />
-    <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SunShaftsComposite.shader" />
@@ -200,11 +266,11 @@
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+    <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
-    <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\MotionBlur.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
     <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
@@ -222,6 +288,7 @@
     <None Include="Assets\Assets_2\StaffOfPain\readme_first.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\frag_ao.cginc" />
+    <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
@@ -233,13 +300,17 @@
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SSAOShader.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ConvertDepth.shader" />
+    <None Include="Assets\GoogleVR\Shaders\GvrController.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
     <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CreaseApply.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+    <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-6DOF.xml" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\GlobalFog.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
@@ -247,12 +318,15 @@
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\GoogleVR\Shaders\Video\VideoUnlitShader.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+    <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CameraMotionBlur.shader" />
+    <None Include="Assets\GoogleVR\Shaders\GvrControllerReticle.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
@@ -270,23 +344,27 @@
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SepiaToneEffect.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\TwirlEffect.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\VortexEffect.shader" />
+    <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Daydream.xml" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseAndGrain.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\GoogleVR\Demos\Shaders\HelloVR\HelloVRUnlitGrayscaleToColor.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\VignettingShader.shader" />
-    <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+    <None Include="Assets\GoogleVR\Shaders\GvrReticleShader.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\Tonemapper.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+    <None Include="Assets\GoogleVR\Shaders\GvrUIOverlay.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\GoogleVR\Plugins\Android\proguard-gvr.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
-    <None Include="Assets\GoogleVR\Legacy\Resources\SolidColor.shader" />
+    <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SimpleClear.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
@@ -295,16 +373,16 @@
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Ricardo/Desktop/ProyectoVideoJuegos backup 2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Ricardo/Desktop/ProyectoVideoJuegos backup 2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Ricardo/Desktop/ProyectoVideoJuegos backup 2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Ricardo/Desktop/ProyectoVideoJuegos backup 2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -484,7 +562,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity.Settings">
-      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+      <HintPath>C:/Users/Ricardo/Desktop/ProyectoVideoJuegos backup 2/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -504,14 +582,14 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Google.ProtocolBuffers">
-      <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJUegos/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Ricardo/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/Ricardo/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>C:/Users/Ricardo/Desktop/ProyectoVideoJuegos backup 2/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

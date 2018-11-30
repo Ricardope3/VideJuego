@@ -77,7 +77,7 @@ public class Usuario : MonoBehaviour {
         {
             linternaPanel.SetActive(true);
         }
-        if (light.active && Input.GetKeyDown(KeyCode.A))
+        if (light.active && Input.GetMouseButtonDown(0))
         {
 
             lamparaArma = !lamparaArma;
@@ -125,7 +125,7 @@ public class Usuario : MonoBehaviour {
         }
         if (!walking)
         {
-           rb.angularVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
             rb.velocity = Vector3.zero;
             transform.rotation = Quaternion.identity;
             if (!source.clip.Equals(coin))
@@ -141,7 +141,7 @@ public class Usuario : MonoBehaviour {
         
 		Ray ray = Camera.main.ViewportPointToRay(new Vector3(.5f,.5f,0));
 		RaycastHit hit;
-
+        
 		if(Physics.Raycast(ray,out hit)){
             if (hit.distance <= 4)
             {
@@ -149,10 +149,12 @@ public class Usuario : MonoBehaviour {
                 {
                     if (!source.clip.Equals(coin))
                     {
-
                         source.Stop();
+                        walking = false;
                     }
-                    walking = false;
+                        
+                    
+                    
                     stop = 0;
                 }
 
@@ -189,6 +191,10 @@ public class Usuario : MonoBehaviour {
                     stop = 0;
                 }
             }
+            else
+            {
+                walking = true;
+            }
 		}
         if (stop == 0)
         {
@@ -201,6 +207,9 @@ public class Usuario : MonoBehaviour {
             cofreSlider.value = stop - start;
             if (stop - start > 3)
             {
+                source.clip = coin;
+                source.Play();
+                StartCoroutine(sonarCoin());
                 destruirEsteCofre = hit.collider.name;
                 char enteroChar = destruirEsteCofre[destruirEsteCofre.Length - 2];
                 int enteroInt;
@@ -226,8 +235,7 @@ public class Usuario : MonoBehaviour {
                     Instantiate<GameObject>(chestOpen, destruirEsteCofreObject.transform.position, destruirEsteCofreObject.transform.rotation);
                     Destroy(destruirEsteCofreObject);
                     vida.value -= 50;
-                    source.clip = coin;
-                    StartCoroutine(sonarCoin());
+                    
                  
                 }
                 if (lampara)
@@ -238,8 +246,7 @@ public class Usuario : MonoBehaviour {
                     light.SetActive(true);
                     lamparaArma = false;
                     lightcomponent.intensity = 5.5f;
-                    source.clip = coin;
-                    StartCoroutine(sonarCoin());
+                    
 
                 }
 
