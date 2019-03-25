@@ -11,10 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Salir1.unity
     guid: e246b4c9dc2987f4b8395457331f3a81
-  - enabled: 1
-    path: Assets/Scenes/Supervivencia1.unity
+  - enabled: 0
+    path: Assets/Scenes/SupervivenciaVieja.unity
     guid: 1a2b4cb506b228d43bd33484034783b1
   - enabled: 1
     path: Assets/Scenes/DeadScene.unity
     guid: ef491d92b7b322d459ee2ba51f196750
+  - enabled: 1
+    path: Assets/Scenes/SalirFacil.unity
+    guid: 13bfff92d28692c4084278ba514e5730
+  - enabled: 1
+    path: Assets/Scenes/Supervivencia1.unity
+    guid: f44dd0c5805e93147a798d3fd3409ac2
   m_configObjects: {}

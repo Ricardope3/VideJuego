@@ -642,9 +642,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scream: {fileID: 0}
+  insanitySource: {fileID: 0}
   player: {fileID: 1378093130}
   jumpCam: {fileID: 1483574022}
   flashIMG: {fileID: 0}
+  ppb: {fileID: 0}
 --- !u!81 &762720238
 AudioListener:
   m_ObjectHideFlags: 0
@@ -963,11 +965,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1378093130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17090fbcacde41e40974a452b1378ce1, type: 3}
+  m_Script: {fileID: 11500000, guid: d3192768d7b51cc4f8f326731c4e0809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loading: {fileID: 0}
-  slider: {fileID: 0}
 --- !u!4 &1378093132
 Transform:
   m_ObjectHideFlags: 0
@@ -1702,9 +1702,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scream: {fileID: 0}
+  insanitySource: {fileID: 0}
   player: {fileID: 1378093130}
   jumpCam: {fileID: 1483574022}
   flashIMG: {fileID: 0}
+  ppb: {fileID: 0}
 --- !u!81 &2069501151
 AudioListener:
   m_ObjectHideFlags: 0

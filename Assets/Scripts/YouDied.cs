@@ -7,12 +7,12 @@ public class YouDied : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        StartCoroutine(irAMenu());
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        StartCoroutine(irAMenu());
+        
 	}
     IEnumerator irAMenu()
     {

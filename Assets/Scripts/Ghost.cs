@@ -14,7 +14,7 @@ public class Ghost : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        
+        //spawn = gameObject.transform;
         agent = GetComponent<NavMeshAgent>();
 		//target = path[0];
 		//ie = verDist();
@@ -36,6 +36,7 @@ public class Ghost : MonoBehaviour {
         if (vamonos)
         {
             agent.destination = spawn.position;
+            StartCoroutine(esperar());
         }
         
         /*
@@ -52,6 +53,11 @@ public class Ghost : MonoBehaviour {
         
 
 	}
+    IEnumerator esperar()
+    {
+        yield return new WaitForSeconds(6);
+        gameObject.transform.position = spawn.position;
+    }
 
 
 

@@ -6,6 +6,7 @@ using UnityEngine.PostProcessing;
 public class ScareJump : MonoBehaviour {
 
     public AudioSource scream;
+    public AudioSource insanitySource;
     public GameObject player;
     public GameObject jumpCam;
     public GameObject flashIMG;
@@ -20,7 +21,7 @@ public class ScareJump : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            ;
+            
             scream.Play();
             
             jumpCam.SetActive(true);
@@ -28,6 +29,7 @@ public class ScareJump : MonoBehaviour {
             flashIMG.SetActive(true);
             ppb.enabled = true;
             //print(ppb.gameObject.name);
+            insanitySource.Play();
             StartCoroutine(Sanity());
             StartCoroutine(endJump());
 
@@ -38,9 +40,9 @@ public class ScareJump : MonoBehaviour {
 
     IEnumerator endJump()
     {
-        yield return new WaitForSeconds(2.03f);
+        yield return new WaitForSeconds(2.5f);
         Destroy(scream);
-        // player.SetActive(true);
+        print("helo");
         jumpCam.SetActive(false);
         flashIMG.SetActive(false);
         
@@ -50,7 +52,6 @@ public class ScareJump : MonoBehaviour {
     {
         yield return new WaitForSeconds(15);
         // player.SetActive(true);
-        print("jaja puto");
         ppb.enabled = false;
         Destroy(gameObject);
     }

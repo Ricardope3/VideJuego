@@ -110,6 +110,7 @@
     <Compile Include="Assets\PostProcessing\Editor\Utils\EditorResources.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\FxStyles.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
+    <Compile Include="Assets\RunemarkStudio\DarkFantasyKit [Free]\Readme\Parts\Editor\ReadmeEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Ricardo/Documents/GitHub/ProyectoVideoJuegos backup 2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

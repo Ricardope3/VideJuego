@@ -42,7 +42,7 @@ public class Usuario : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        llaveInt = Random.Range(0, 1);
+        llaveInt = Random.Range(0, 2);
         print(llaveInt);
         walking = true;
 		spawn = transform.position;
@@ -152,7 +152,7 @@ public class Usuario : MonoBehaviour {
             velocity = 0;
         }
 
-        if (transform.position.y < -10 || vida.value >99) {
+        if (transform.position.y < -2 || vida.value >99) {
             SceneManager.LoadScene("DeadScene");
         }
         
@@ -287,7 +287,7 @@ public class Usuario : MonoBehaviour {
 
     IEnumerator esperarSaquese()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(7);
         saquese = false;
     }
 }

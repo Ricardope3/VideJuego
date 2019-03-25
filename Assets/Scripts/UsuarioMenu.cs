@@ -39,6 +39,14 @@ public class UsuarioMenu : MonoBehaviour {
                     SceneManager.LoadScene("Supervivencia1");
                 }
             }
+            else if (hit.collider.name == "ESCAPE (EASY)")
+            {
+                stop = Time.time;
+                if (stop - start > 3)
+                {
+                    SceneManager.LoadScene("SalirFacil");
+                }
+            }
             else
             {
                 stop = 0;
